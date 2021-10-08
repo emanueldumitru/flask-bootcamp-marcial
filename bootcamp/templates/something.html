@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block content%}
+
+<h1> This is something </h1>
+
+<form action="{{ url_for('thank_you') }}">
+    <label for="first"> First name </label>
+    <input type="text" name="first">
+    <input type="submit" value="Submit form">
+</form>
+
+{% endblock %}
+

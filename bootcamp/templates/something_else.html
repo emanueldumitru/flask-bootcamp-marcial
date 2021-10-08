@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block content%}
+
+<h1> This is something else {{ skanska | capitalize }} </h1>
+
+<a href="{{ url_for('static', filename='puppy-development.jpg') }}"> Here </a>
+
+{% endblock %}
+

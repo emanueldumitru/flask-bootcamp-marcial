@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Sucker</title>
+</head>
+<body>
+    <h1> Welcome bitch {{variabila}} </h1>
+    <img src="./static/puppy-development.jpg">
+    <ul>
+        {% for item in alta %}
+            <li> {{item}} </li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Fuck' in alta %}
+        <p> Found the fuck </p>
+    {% else %}
+        <p> Didn't find the fuck </p>
+    {% endif %}
+
+    <a href="{{ url_for('venus') }}"> Going home </a>
+    <a href="{{ url_for('something') }}"> Something </a>
+    <a href="{{ url_for('something_else') }}">Something Else </a>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
