@@ -1,0 +1,1 @@
+# Flask application simple integration with Stripe payments
